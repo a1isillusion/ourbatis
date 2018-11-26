@@ -26,5 +26,10 @@
       <artifactId>ognl</artifactId>
       <version>3.0.21</version>
     </dependency>
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>5.1.42</version>
+    </dependency>
   </dependencies>
 </project>

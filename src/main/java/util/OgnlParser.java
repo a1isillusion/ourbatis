@@ -11,8 +11,10 @@ public class OgnlParser {
 	
 public OgnlContext context;
 
-public OgnlParser(String key,Object value) {
+public OgnlParser() {
 	context=new OgnlContext();
+}
+public void put(String key,Object value) {
 	context.put(key, value);
 }
 public Object get(String expression) {
