@@ -1,10 +1,15 @@
 package nullguo.ourbatis;
 
 
+import java.io.File;
 import java.sql.Connection;
 import java.sql.Statement;
 import java.util.HashMap;
 import java.util.List;
+
+import org.dom4j.Document;
+import org.dom4j.Element;
+import org.dom4j.io.SAXReader;
 
 import database.Database;
 import map.MappedStatement;
@@ -31,17 +36,16 @@ public class App
         annotationUtil.scanAnootation();
         TestMapper mapper=MapperProxy.getInstance(TestMapper.class);
         Customer customer=new Customer();
-        customer.id=6;
+        customer.id=7;
         customer.name="our";
         customer.sex="男";
         customer.papertype="身份证";
-        customer.papernumber="1235";
-        customer.phonenumber="32134";
+        customer.papernumber="123225";
+        customer.phonenumber="321234";
         mapper.insertCustomer(customer);
         List<Customer> list=mapper.selectCustomer();
         for(Customer customer2:list) {
         	System.out.println(customer2);
         }
-        
     }
 }

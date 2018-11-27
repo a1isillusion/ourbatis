@@ -24,6 +24,7 @@ public static Object handle(MappedStatement mappedStatement,Object[] args) {
         else {
             result=statement.execute(sql);
 		}
+		connection.close();
 	} catch (SQLException e) {
 		e.printStackTrace();
 	}

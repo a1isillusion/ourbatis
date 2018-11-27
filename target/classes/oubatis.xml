@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+<driver>com.mysql.jdbc.Driver</driver>
+<url>jdbc:mysql://localhost:3306/hotel</url>
+<user>root</user>
+<password>1234</password>
+<initSize>1</initSize>
+</configuration>
