@@ -21,6 +21,9 @@ public Object get(String expression) {
 	Object value=null;
 	try {
 		value= Ognl.getValue(Ognl.parseExpression(expression), context, context.getRoot());
+		if(value instanceof String) {
+			value="\""+value+"\"";
+		}
 	} catch (OgnlException e) {
 		e.printStackTrace();
 	}
